@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+
+<body style="background-color:black;"> 
+    <style>
+        .center {
+            width: 420px;
+            height: 650px;
+            background: linear-gradient(to bottom, #e8701b 50%, white 50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+        }
+
+        .textt {
+            color: white;
+            font-family: 'Adobe Fan Heiti Std';
+            display: inline;
+            padding-left: 50px;
+        }
+    </style>
+    
+    
+    <div class="center">
+        <h1 class="textt">IRIS</h1>
+        <br />
+        <h2 class="textt">Hello</h2> &nbsp;&nbsp;&nbsp;&nbsp;<img src="hand.png" height="25" width="25" />
+        <br /><h3 class="textt">I am Iris, I Am Virtual Assistant</h3>
+        <br /><h3 class="textt">How may I help You?</h3><br />
+        <div style="padding-left: 50px;">
+            <input type="image"  onclick="myFunction()" src="logo.png" style=" width: 70px; height: 70px; border: 1px solid #fff; border-radius:50%;" />
+             
+        </div>
+         <div id="show"  style="display:none; width: 350px; height: 410px; position: absolute; left: 50%; top: 60%; background:white; transform: translate(-50%, -50%);border-radius: 25px; ">
+            <div style="padding-left:20px;">
+               
+                 <img src="logo.png" style=" width: 70px; height: 70px; border: 1px solid #fff; border-radius:50%;">
+                <br /><h4 style="font-family:'Adobe Fan Heiti Std';">Frequently asked Questions?</h4>
+            </div>
+            <div style="width: 300px; height: 40px; border-radius: 10px; padding-left: 30px;border: 1px solid #808080;">
+                <h5 style="text-align:center;"> Can I redeen my FB before the original term?</h5>
+            </div>
+            <br />
+            <div style="width: 300px; height: 40px; border-radius: 10px; padding-left: 30px;border: 1px solid #808080;">
+                <h5 style="text-align:center;"> How do I pay my Credit Card?</h5>
+            </div>
+            <br />
+            <div style="width: 300px; height: 40px; border-radius: 10px; padding-left: 30px;border: 1px solid #808080;">
+                <h5 style="text-align:center;"> How can I get my Account Statement?</h5>
+            </div>
+            <br />
+            <div style="width: 300px; height: 40px; border-radius: 10px; padding-left: 30px;border: 1px solid #808080;">
+                <h5 style="text-align:center;"> What is the tenure of Fixed Deposit?</h5>
+            </div>
+            <br />
+            <div style="padding-left: 50px;">
+                <button style="width: 250px; height: 35px; border-radius: 25px; background-color:white;  border: 1px solid #808080;">Start a New Conversation</button>
+            </div>
+        </div>
+     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("show");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
